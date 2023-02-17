@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Холопьев Даниил Романович - Лабораторная работа №1</h1>
+    <!-- задача 1 -->
+    <h2>Конвертация скоростей</h2>
+
+    <p>Введите значение в поле мили/ч, чтобы преобразовать его в км/ч:</p>
+
+    <p>
+        <input id="input1" type="number" placeholder="м/c" oninput="Converter(this.value, 1)"
+            onchange="speedConverter(this.value, 1)">
+    </p>
+    <p><span id="inp1"></span> м/с соответствует <span id="output1"></span> км/ч</p>
+
+    <p>
+        <input id="input1" type="number" placeholder="км/ч" oninput="Converter(this.value, 0)"
+            onchange="speedConverter(this.value, 0)">
+    </p>
+    <p><span id="inp2"></span> км/ч соответствует <span id="output2"></span> м/с</p>
+
+    <script src="script.js"></script>
+    <!-- задача 2 -->
+    <h2>Треугольник</h2>
+    <input id="a" placeholder="Сторона 1" type="number">
+    <input id="b" placeholder="Сторона 2" type="number">
+    <input id="c" placeholder="Сторона 3" type="number">
+    <br>
+    <button onclick="Triangle()">Проверить</button>
+    <p><span id="Tout"></span></p>
+    <!-- задача 3 -->
+    <h2>Fizz-Buzz</h2>
+    <input id="fbcount" placeholder="Введите число" type="number" oninput="FizzBuzz(this.value)"
+        onchange="FizzBuzz(this.value)">
+    <p id="fbout"></p>
+
+    <!-- задача 4 -->
+    <h2>Елка к новому году</h2>
+    <input placeholder="Высота ёлки" id="treeH" type="number">
+    <button onclick="CTree()">Построить</button>
+    <p id="ctree"></p>
+    <!-- задача 5 -->
+    <h2>Угадай число</h2>
+    <button onclick="randn()">Загадать число</button>
+    <br>
+    <input id="ng" placeholder="Введите число" type="number" oninput="guessn(this.value)" onchange="guessn(this.value)">
+    <p id="guessres"></p>
+
+    <!-- задача 6 -->
+    <h2>Деление</h2>
+    <input id="n" placeholder="Введите число n" type="number">
+    <input id="x" placeholder="Введите число x" type="number">
+    <input id="y" placeholder="Введите число y" type="number">
+    <button onclick="Devision()">Проверить</button>
+    <p id="devcheck"></p>
+</body>
+<!-- задача 7 -->
+<h2>Кварталы</h2>
+<input id="" placeholder="Введите месяц" type="number" oninput="quarter(this.value)" onchange="quarter(this.value)">
+<p id="monthc"></p>
+
+</html>
